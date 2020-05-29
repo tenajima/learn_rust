@@ -25,6 +25,29 @@ fn practice_1() {
     );
     println!("{:?}", map)
 }
+
+fn practice_2() {
+    // let text = String::from("first");
+    let text = "apple";
+    let v: Vec<char> = text.chars().collect();
+    match v[0] {
+        // 'a' | 'i' | 'u' | 'e' | 'o' => println!("{}-{}ay", v[1..], v[0]),
+        'a' | 'i' | 'u' | 'e' | 'o' => {
+            let head: String = v.into_iter().collect();
+            println!("{}-hay", head)
+        }
+        _ => {
+            let head: String = v[1..].into_iter().collect();
+            println!("{}-{}ay", head, v[0])
+        }
+    }
+}
+
+fn practice_3() {
+    // let text = String::from("hello");
+    let text = String::from("こんにちは");
+    let hoge = &text[0..3];
+}
 fn main() {
-    practice_1();
+    practice_3();
 }
