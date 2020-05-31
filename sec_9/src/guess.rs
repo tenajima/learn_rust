@@ -11,7 +11,7 @@ impl Guess {
         Guess { value }
     }
 
-    // pub fn value(&self) -> i32 {
-    //     self.value
-    // }
+    pub fn value(&self) -> i32 {
+        self.value
+    }
 }
